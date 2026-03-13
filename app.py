@@ -1,7 +1,8 @@
 import streamlit as st
 from groq import Groq
 import requests
-from apikey import groq_api_key, unsplash_api_key
+groq_api_key = st.secrets["groq_api_key"]
+unsplash_api_key = st.secrets["unsplash_api_key"]
 from reportlab.platypus import SimpleDocTemplate, Paragraph, Spacer, Image
 from reportlab.lib.styles import getSampleStyleSheet
 from reportlab.lib.pagesizes import letter
