@@ -1,0 +1,64 @@
+
+streamlit>=1.30.0
+groq>=0.9.0
+requests>=2.31.0
+reportlab>=4.0.0
+
+---
+
+What each package is used for
+
+* streamlit → builds the web app interface
+* groq → AI blog generation (Llama models)
+* requests → calls the Unsplash API for images
+* reportlab → creates the downloadable PDF
+
+---
+
+ After someone downloads your project from
+
+GitHub
+
+they will run:
+
+bash
+pip install -r requirements.txt
+
+
+Then start the app:
+
+bash
+streamlit run app.py
+
+
+---
+
+ Your repository should now look like
+
+
+blogcraft-ai
+│
+├── app.py
+├── requirements.txt
+├── README.md
+└── .gitignore
+
+
+---
+
+ Important (Security)
+
+Make sure `.gitignore` contains:
+
+
+venv/
+__pycache__/
+apikey.py
+.env
+
+
+So your API keys are not uploaded.
+
+---
+
+
